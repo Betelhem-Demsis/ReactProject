@@ -1,0 +1,143 @@
+body {
+  background: url(ooorganize.svg) black;
+  color: rgb(195, 200, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.content {
+  background: rgba(170, 166, 154, 0.221);
+  box-shadow: 0 0 10px 5px rgba(203, 204, 218, 0.44);
+  width: 50vw;
+  border-radius: 20px;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+  font-size: 35px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  font-weight: bold;
+  color: #865dcc;
+  background-image: -webkit-linear-gradient(
+    135deg,
+    #a68ad6 0%,
+    #6a207b 25%,
+    #607d8b 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+label {
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-input {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+
+.content-input input[type="text"] {
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  background: #e8dddd4c;
+  color: aliceblue;
+  outline: 0;
+  border: none;
+  margin-left: 20px;
+  margin-right: 40px;
+  flex-grow: 1;
+}
+
+.content-input input[type="number"] {
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  color: aliceblue;
+  background: #e8dddd4c;
+  outline: 0;
+  border: none;
+  width: 80px;
+  margin-left: 10px;
+}
+
+button {
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 10px;
+  color: rgba(206, 201, 195, 0.677);
+  box-shadow: 0 0 4px 3px rgba(203, 204, 218, 0.226);
+  background-color: #6258584c;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin-top: 17rem;
+    margin-bottom: 18rem;
+  }
+  .content {
+    height: fit-content;
+    width: 98%;
+    padding: 3px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  label {
+    font-size: 20px;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    font-weight: bolder;
+  }
+
+  .content-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content-input input[type="text"] {
+    font-size: 20px;
+    height: 35px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  .content-input input[type="number"] {
+    font-size: 20px;
+    height: 35px;
+    margin-left: 0;
+    width: 70%;
+  }
+
+  button {
+    font-size: 18px;
+    margin-top: 3px;
+    margin: 0 auto; /* Center the button */
+  }
+}
