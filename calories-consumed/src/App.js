@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 
-const API_KEY = "qBMiAU2ndXM+/TQ4Hqu6AA==IS2ImI7KmWkqZIrp";
-const API_URL = "https://api.calorieninjas.com/v1/nutrition?query=";
+const API_KEY = "";
+const API_URL = "";
 
 async function fetchCalories(food) {
   const response = await fetch(`${API_URL}${food}`, {
